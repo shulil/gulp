@@ -1,0 +1,1 @@
+var gulp=require("gulp");gulp.task("default",function(){gulp.src("js/*.js").pipe(gulp.dest("build/js")),console.log(22222)});
