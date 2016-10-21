@@ -1,0 +1,16 @@
+{
+  "name": "sgcTest",
+  "version": "1.0.0",
+  "description": "搞起耍的",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strongloop/express.git"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.0.0"
+  }
+}
