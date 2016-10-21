@@ -2,7 +2,7 @@
 <html lang="zh-CN" id="global_tff">
 <head>
 	<title>select</title>
-	<script src="jquery.js"></script>
+	<script src="../build/js/index.js"></script>
 </head>
 <body  class="">
 	<select size="1" id="dd">
@@ -11,14 +11,6 @@
 		<option value="3">3</option>
 	</select>
 	<script>
-		$(function(){
-			console.log(1);
-			$("#dd").select();
-			$("#dd").click(function(){
-				$(this).select();
-			})
-			$("#dd").trigger("click");
-			
-		})
+		
 	</script>
 </body>

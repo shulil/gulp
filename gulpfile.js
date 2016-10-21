@@ -4,6 +4,9 @@ var gulp = require('gulp');
 // 获取 uglify 模块（用于压缩 JS）
 var uglify = require('gulp-uglify');
 
+// 获取 babel
+var babel = require('gulp-babel');
+
 // 获取 minify-css 模块（用于压缩 CSS）
 var minifyCSS = require('gulp-minify-css')
 
@@ -13,6 +16,9 @@ gulp.task('default', ['script', 'css', 'watch']);
 // 在命令行使用 gulp scripts 启动此任务
 gulp.task('script', function() {
 	gulp.src('js/*.js')
+	.pipe(babel({
+            presets: ['es2015']
+        }))
 	.pipe(uglify())
 	.pipe(gulp.dest('build/js/'));
 });
